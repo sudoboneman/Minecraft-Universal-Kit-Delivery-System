@@ -330,7 +330,7 @@ CREATE TABLE users (
 - PLEASE PLEASE PLEASE USE THE PROVIDED PACKAGE.JSON ONLY TO INSTALL THE NPM PACKAGES, IF INSTALLING MANUALLY. I cant stress this enough. 6b6t WILL BREAK YOUR BOT IF YOU USE PACKAGES OF OTHER VERSIONS. I recommend just doing npm install on node 22. That's the safest way to ensure your bot is workable.
 - 6b6t's inconsistent tps can cause the bot's login sequence to timeout early, thereby causing it to get stuck in the lobby. This was a recurring phenomena in the testing. To fix it, just restart index.js.
 - This framework does not work for stashes in the end, the weird proxy handover bypass to make the bot execute /home is too complicated to implement. Figure it out yourselves.
-- The bot is extremely fast and robust (genuinely). If you face any problems, contact me on discord *@1_sudo*.
+- The bot is extremely fast and robust (genuinely). If you face any problems, contact me on discord *@_irodov*.
 - Please note that this has been specifically developed for 6b6t, I do not guarantee that will work on other anarchy servers, and will not take any responsibility. Figure it out yourselves.
 
 ### Credits:
