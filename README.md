@@ -27,6 +27,11 @@ The system has two main components:
 
 ## Installation
 
+First create a folder, open it in terminal and clone the repo with
+```bash
+git clone https://github.com/sudoboneman/Minecraft-Universal-Kit-Delivery-System.git
+```
+
 ### Backend
 
 ```bash
