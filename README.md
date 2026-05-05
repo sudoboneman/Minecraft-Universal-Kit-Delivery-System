@@ -339,7 +339,7 @@ CREATE TABLE users (
 - Please note that this has been specifically developed for 6b6t, I do not guarantee that will work on other anarchy servers, and will not take any responsibility. Figure it out yourselves.
 
 ### Credits:
-**sudoboneman (discord :: _irodov)**
+**sudoboneman**
 
 ### With Love, 
-### - From TSR CLAN ❤️
+## - From TSR CLAN ❤️
