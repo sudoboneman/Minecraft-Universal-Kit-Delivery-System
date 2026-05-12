@@ -343,3 +343,31 @@ CREATE TABLE users (
 
 ### With Love, 
 ## - From TSR CLAN ❤️
+
+## Deployment
+
+### Backend (Discord Bot)
+1. Navigate to `backend/`
+2. `python3 -m venv venv && source venv/bin/activate`
+3. `pip install -r requirements.txt`
+4. Copy `.env.example` to `.env` (or create from scratch):
+   - Set DISCORD_BOT_TOKEN, ACTIVE_CHANNEL_ID, GUILD_ID, OWNER_USER_ID, OWNER_IGN
+   - Configure DAILY_FREE_TOKENS, COOLDOWN_BETWEEN_ORDERS, MAX_ORDER_QTY as needed
+   - Set WORKER_URL to `http://localhost:3003` (or the worker's deployed URL)
+5. `python main.py`
+
+### Worker (Mineflayer Bot)
+1. Navigate to `worker/`
+2. `npm install`
+3. Create `.env`:
+   - MC_HOST, MC_PORT, MC_AUTH, MC_VERSION
+   - WORKER_USERNAME, WORKER_PASSWORD
+   - API_PORT (default 3003)
+4. Edit `kits.json` to configure available kits with chest coordinates and prices
+5. `node index.js`
+
+### Running Together (Production)
+- The backend and worker can run on separate machines
+- Set the backend's WORKER_URL to point to the worker's public address
+- For 6b6t Minecraft server compatibility, use Node 22 for the worker
+- The worker includes a `failed_orders.json` file on disk for crash recovery
